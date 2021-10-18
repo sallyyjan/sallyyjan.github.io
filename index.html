@@ -18,7 +18,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,20 +31,26 @@ body, html {
   min-height: 100%;
 }
 
-/* Second image (Tech Projects) */
+/* Second image (Experience) */
 .bgimg-2 {
+  background-image: url("./images/cityDusk.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Tech Projects) */
+.bgimg-3 {
   background-image: url("./images/code.jpg");
   min-height: 400px;
 }
 
 /* Third image (Relevant Courses) */
-.bgimg-3 {
+.bgimg-4 {
   background-image: url("./images/StarfieldLibrary.jpg");
   min-height: 400px;
 }
 
 /* Fourth image (Contact) */
-.bgimg-4 {
+.bgimg-5 {
   background-image: url("./images/sky.jpg");
   min-height: 400px;
 }
@@ -54,7 +60,7 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
     background-attachment: scroll;
     min-height: 400px;
   }
@@ -78,9 +84,15 @@ body, html {
     </div>
 
     <div class="w3-dropdown-hover w3-hide-small">
-      <a href="#projects" class=" w3-button w3-hide-small"><i class="fa fa-th"></i> TECHNICAL PROJECTS <i class="fa fa-caret-down"></i></a>
+      <a href="#experience" class=" w3-button w3-hide-small"><i class="fa fa-laptop"></i> EXPERIENCE <i class="fa fa-caret-down"></i></a>
       <div class="w3-dropdown-content w3-card-4 w3-bar-block">
         <a href="#design-team" class="w3-bar-item w3-button">Design Team</a>
+			</div>
+    </div>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <a href="#projects" class=" w3-button w3-hide-small"><i class="fa fa-th"></i> TECHNICAL PROJECTS <i class="fa fa-caret-down"></i></a>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
 			  <a href="#course-projects" class="w3-bar-item w3-button">Course Projects</a>
 			</div>
     </div>
@@ -95,6 +107,7 @@ body, html {
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#experience" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERIENCE</a>
     <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">TEHCNICAL PROJECTS</a>
     <a href="#courses" class="w3-bar-item w3-button" onclick="toggleFunction()">RELEVANT COURSES</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
@@ -117,7 +130,7 @@ body, html {
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>Sally An</b></p><br>
-      <img src="./images/profilePic.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="200" height="333">
+      <img src="./images/profilePic.jpg" class="w3-round w3-image" alt="Photo of Me" width="200" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -198,7 +211,8 @@ body, html {
     <h3 class="w3-center">Experience with Python</h3>
       <div style="text-align: center;">
         <div style="display: inline-block; text-align: left;">
-          <li><a href="#">add here</a></li>
+          <li><a href="#CPEN291">CPEN 291: Engineering Design Studio I</a></li>
+          <li><a href="#AR-paint-app">AR Painting Application</a></li>
         </div>
       </div>
     </div>
@@ -240,54 +254,57 @@ body, html {
 -->
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="experience">
+  <div class="w3-display-middle">
+    <span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity">EXPERIENCE</span>
+  </div>
+</div>
+
+<!-- Container (Project Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <div id="design-team">
+    <h3 class="w3-center">UBC UAS</h3>
+    <p class="w3-center"><em>University of British Columbia Unmanned Aircraft Systems Design Team</em></p>
+    <a href="https://gitlab.com/ubcuas" style="text-decoration: none;">
+      <i class="fa fa-gitlab w3-hover-opacity w3-center w3-xxlarge" style="text-decoration: none; display: block;"></i>
+    </a>
+    <p class="w3-center"><em>tech used</em></p><br>
+    <div style="text-align: center;">
+      <div style="display: inline-block; text-align: left;">
+        <li></li>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="projects">
   <div class="w3-display-middle">
     <span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity">TECHNICAL PROJECTS</span>
   </div>
 </div>
 
 <!-- Container (Project Section) -->
-<div class="w3-content w3-container w3-padding-64" id="projects">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+<div class="w3-content w3-container w3-padding-64">
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+  <div id="AR-paint-app">
+    <h3 class="w3-center">AR PAINTING APPLICATION</h3>
+    <a href="https://github.com/sallyyjan/disney-wand" style="text-decoration: none;">
+      <i class="fa fa-github w3-hover-opacity w3-center w3-xxlarge" style="text-decoration: none; display: block;"></i>
+    </a>
+    <p class="w3-center"><em>Python, OpenCV</em></p><br>
+    <div style="text-align: center;">
+      <div style="display: inline-block; text-align: left;">
+        <li>Developed an object detection application using OpenCV in Python to display multiple target objects’ paths on a virtual canvas</li>
+        <li>Processed webcam video frames by converting color-space to identify target using HSV value thresholds and accurately extract contours</li>
+        <li>Analyzed object contours by comparing contour curve approximation and perimeter values to determine detection accuracy</li>
+      </div>
     </div>
   </div>
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
 </div>
 
 <!-- Modal for full size images on click-->
@@ -299,78 +316,88 @@ body, html {
   </div>
 </div>
 
-<!-- Third Parallax Image: Relevant Courses -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<!-- Fourth Parallax Image: Relevant Courses -->
+<div class="bgimg-4 w3-display-container w3-opacity-min" id="courses">
   <div class="w3-display-middle">
      <span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity">RELEVANT COURSES</span>
   </div>
 </div>
 
 <!-- Container (Courses Section) -->
-<div class="w3-content w3-container w3-padding-64" id="courses">
+<div class="w3-content w3-container w3-padding-64">
   <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-center">First Year</h2>
   <!-- first year courses responsive grid -->
   <div class="w3-row-padding w3-center">
-    <div class="w3-col m6">
+    <div class="w3-col m6" id="APSC160">
       <h3>APSC 160</h3>
       <h4>Introduction to Computation in Engineering Design</h4>
-      <p>stuff here</p>
+      <p>Analysis and simulation, laboratory data acquisition and processing, measurement interfaces, engineering tools, computer systems organization, programming languages.</p>
     </div>
   </div>  
 
   <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-center">Second Year</h2>
   <!-- second year courses responsive grid -->
   <div class="w3-row-padding w3-center">
-    <div class="w3-col m6">
+    <div class="w3-col m6" id="CPEN211">
       <h3>CPEN 211</h3>
       <h4>Introduction to Microcomputers</h4>
-      <p>stuff here</p>
+      <p>Boolean algebra; combinational and sequential circuits; organization and operation of microcomputers, memory addressing modes, representation of information, instruction sets, machine and assembly language programming, systems programs, I/O structures, I/O interfacing and I/O programming, introduction to digital system design using microcomputers.</p>
     </div>
 
-    <div class="w3-col m6">
+    <div class="w3-col m6" id="CPEN221">
       <h3>CPEN 221</h3>
       <h4>Principle of Software Construction</h4>
-      <p>stuff here</p>
-    </div>
-
-    <div class="w3-col m6">
-      <h3>CPEN 291</h3>
-      <h4>Computer Engineering Design Studio I</h4>
-      <p>stuff here</p>
-    </div>
-
-    <div class="w3-col m6">
-      <h3>CPSC 221</h3>
-      <h4>Basic Algorithms and Data Structures</h4>
-      <p>stuff here</p>
-    </div>
-
-    <div class="w3-col m6">
-      <h3>CPSC 261</h3>
-      <h4>Basics of Computer Systems</h4>
-      <p>stuff here</p>
+      <p>Design, implementation, reasoning about software systems: abstraction and specification of software, testing, verification, abstract data types, object-oriented design, type hierarchies, concurrent software design.</p>
     </div>
   </div>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m6" id="CPEN291">
+      <h3>CPEN 291</h3>
+      <h4>Computer Engineering Design Studio I</h4>
+      <p>Design projects involving training, testing, and deploying of ML models. 
+        Basics of computer vision, natural language processing, transfer learning, and decision trees. 
+        Utilized Google Colaboratory hardware accelerators and Pytorch.</p>
+    </div>
+
+    <div class="w3-col m6" id="CPSC221">
+      <h3>CPSC 221</h3>
+      <h4>Basic Algorithms and Data Structures</h4>
+      <p>Design and analysis of basic algorithms and data structures; algorithm analysis methods, searching and sorting algorithms, basic data structures, graphs and concurrency.</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m6" id="CPSC261">
+      <h3>CPSC 261</h3>
+      <h4>Basics of Computer Systems</h4>
+      <p>Software architecture, operating systems, and I/O architectures. 
+        Relationships between application software, operating systems, and 
+        computing hardware; critical sections, deadlock avoidance, and 
+        performance; principles and operation of disks and networks.</p>
+    </div>
+  </div>
+    
 
   <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-center">Third Year</h2>
   <!-- second year courses responsive grid -->
   <div class="w3-row-padding w3-center">
-    <div class="w3-col m6">
+    <div class="w3-col m6" id="CPEN322">
       <h3>CPEN 322</h3>
       <h4>Software Construction: Web Applications</h4>
-      <p>stuff here</p>
+      <p>Contemporary concepts and techniques for developing interactive software applications: client-server architectures; session-oriented systems; security and scalability; models of application deployment.</p>
     </div>
 
-    <div class="w3-col m6">
+    <div class="w3-col m6" id="CPEN331">
       <h3>CPEN 331</h3>
       <h4>Operating Systems</h4>
-      <p>stuff here</p>
+      <p>Operating systems, their design and their implementation. Process concurrency, synchronization, communication and scheduling. Device drivers, memory management, virtual memory, file systems, networking and security.</p>
     </div>
 
-    <div class="w3-col m6">
+    <div class="w3-col m6" id="CPSC320">
       <h3>CPSC 320</h3>
       <h4>Intermediate Algorithm Design and Analysis</h4>
-      <p>stuff here</p>
+      <p>Systematic study of basic concepts and techniques in the design and analysis of algorithms, illustrated from various problem areas. Topics include: models of computation; choice of data structures; graph-theoretic, algebraic, and text processing algorithms.</p>
     </div>
   </div>
 
@@ -378,8 +405,8 @@ body, html {
 
 
 
-<!-- Fourth Parallax Image with Portfolio Text -->
-<div class="bgimg-4 w3-display-container w3-opacity-min">
+<!-- Fith Parallax Image with Portfolio Text -->
+<div class="bgimg-5 w3-display-container w3-opacity-min" id="contact">
   <div class="w3-display-middle">
      <span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity">CONTACT</span>
   </div>
@@ -387,8 +414,8 @@ body, html {
 
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">WHERE I STUDY</h3>
   <p class="w3-center"><em>I'd love your feedback!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
@@ -397,25 +424,22 @@ body, html {
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Vancouver, BC, Canada<br><br>
+        <a href="https://github.com/sallyyjan" class="w3-hover-text-black" style="text-decoration: none">
+          <i class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+          github.com/sallyyjan
+        </a><br>
+        <a href="https://gitlab.com/sallyyjan" class="w3-hover-text-black" style="text-decoration: none">
+          <i class="fa fa-gitlab fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+          gitlab.com/sallyyjan
+        </a><br>
+        <a href="https://www.linkedin.com/in/sally-an/" class="w3-hover-text-black" style="text-decoration: none">
+          <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+          linkedin.com/in/sally-an
+        </a><br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: sallyyjan@gmail.com<br>
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
+      
     </div>
   </div>
 </div>
@@ -424,8 +448,8 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/sallyyjan"><i class="fa fa-facebook-official w3-hover-opacity" style="text-decoration: none"></i></a>
     <a href="https://github.com/sallyyjan"><i class="fa fa-github w3-hover-opacity" style="text-decoration: none"></i></a>
+    <a href="https://gitlab.com/sallyyjan"><i class="fa fa-gitlab w3-hover-opacity" style="text-decoration: none"></i></a>
     <a href="https://www.linkedin.com/in/sally-an/"><i class="fa fa-linkedin w3-hover-opacity" style="text-decoration: none"></i></a>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
