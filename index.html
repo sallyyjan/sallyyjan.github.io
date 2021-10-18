@@ -233,9 +233,64 @@ body, html {
         </div>
       </div>
     </div>
+  </div>  
 
-    <!-- tech row 2 -->
-
+    <div class="w3-padding-64">
+      <!-- tech row 2 -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <img src="./images/jsLogo.png" style="width:70%; padding:10px" onclick="listProj('jsProj')" class="w3-hover-opacity" alt="javascript language" name="jsProj">
+        </div>
+  
+        <div class="w3-col m3">
+          <img src="./images/html5Logo.png" style="width:70%; padding:10px" onclick="listProj('htmlProj')" class="w3-hover-opacity" alt="HTML5" name="htmlProj">
+        </div>
+  
+        <div class="w3-col m3">
+          <img src="./images/css3Logo.png" style="width:70%; padding:10px" onclick="listProj('cssProj')" class="w3-hover-opacity" alt="CSS" name="cssProj">
+        </div>
+  
+        <div class="w3-col m3">
+          <img src="./images/verilogLogo.png" style="width:70%; padding:10px" onclick="listProj('verilogProj')" class="w3-hover-opacity" alt="Verilog hardware description language" name="verilogProj">
+        </div>
+      </div>
+  
+      <!-- tech row 2 project lists -->
+      <div id="jsProj" style="display:none">
+        <h3 class="w3-center">Experience with JavaScript</h3>
+        <div style="text-align: center;">
+          <div style="display: inline-block; text-align: left;">
+            <li><a href="#">stuff here</a></li>
+          </div>
+        </div>
+      </div>
+        
+      <div id="htmlProj" style="display:none">
+      <h3 class="w3-center">Experience with HTML</h3>
+        <div style="text-align: center;">
+          <div style="display: inline-block; text-align: left;">
+            <li><a href="#">stuff here</a></li>
+          </div>
+        </div>
+      </div>
+        
+      <div id="cssProj" style="display:none">
+      <h3 class="w3-center">Experience with CSS</h3>
+        <div style="text-align: center;">
+          <div style="display: inline-block; text-align: left;">
+            <li><a href="#">stuff here</a></li>
+          </div>
+        </div>
+      </div>
+  
+      <div id="verilogProj" style="display:none">
+      <h3 class="w3-center">Experience with Verilog</h3>
+        <div style="text-align: center;">
+          <div style="display: inline-block; text-align: left;">
+            <li><a href="#">stuff heres</a></li>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 
@@ -502,7 +557,11 @@ var projList = [
             "cProj",
             "cppProj",
             "pyProj",
-            "javaProj"
+            "javaProj",
+            "jsProj",
+            "htmlProj",
+            "cssProj",
+            "verilogProj"
 ];
 
 // display corresponding tech project list
