@@ -133,8 +133,10 @@ body, html {
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>UBC Computer Engineering Student</em></p>
-  <p>I'm a third year student at the University of British Columbia studying Computer Engineering.</p>
+  <p class="w3-center"><em>Computer Engineering Student</em></p>
+  <p>Hi! I'm a Computer Engineering student in my penultimate year at the University of British Columbia. 
+    I am currently a full time student and a systems software developer on my school's unmanned aircraft systems design team (<a href="https://www.ubcuas.com/">UBC UAS</a>).
+  </p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>Sally An</b></p><br>
@@ -143,7 +145,9 @@ body, html {
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. </p>
+      <p>I love to solve real-world problems and have a strange addiction to the thrill of debugging. 
+        I am passionate about software development and am always excited to share my joy of technology by making random little projects.
+        Take a peek around my website to see what I've been up to!</p>
     </div>
   </div>
 
@@ -210,7 +214,6 @@ body, html {
       <div style="text-align: center;">
         <div style="display: inline-block; text-align: left;">
           <li><a href="#CPSC221">CPSC 221 Basic Algorithms and Data Structures</a></li>
-          <li><a href="#CPEN291">CPEN 291 Computer Engineering Design Studio I</a></li>
         </div>
       </div>
     </div>
@@ -221,6 +224,8 @@ body, html {
         <div style="display: inline-block; text-align: left;">
           <li><a href="#CPEN291">CPEN 291: Engineering Design Studio I</a></li>
           <li><a href="#AR-paint-app">AR Painting Application</a></li>
+          <li><a href="#UBC-UAS">UBC UAS: Golden Retriever</a></li>
+          <li><a href="#toxicity-detector">Toxicity Detector</a></li>
         </div>
       </div>
     </div>
@@ -229,7 +234,7 @@ body, html {
     <h3 class="w3-center">Experience with Java</h3>
       <div style="text-align: center;">
         <div style="display: inline-block; text-align: left;">
-          <li><a href="#CPEN221">CPEN 221 </a></li>
+          <li><a href="#CPEN221">CPEN 221: Principles of Software Construction</a></li>
         </div>
       </div>
     </div>
@@ -260,7 +265,8 @@ body, html {
         <h3 class="w3-center">Experience with JavaScript</h3>
         <div style="text-align: center;">
           <div style="display: inline-block; text-align: left;">
-            <li><a href="#">stuff here</a></li>
+            <li><a href="#toxicity-detector">Toxicity Detector</a></li>
+            <li><a href="#CPEN322">CPEN 322: Software Construction - Web Applications</a></li>
           </div>
         </div>
       </div>
@@ -269,7 +275,8 @@ body, html {
       <h3 class="w3-center">Experience with HTML</h3>
         <div style="text-align: center;">
           <div style="display: inline-block; text-align: left;">
-            <li><a href="#">stuff here</a></li>
+            <li><a href="#toxicity-detector">Toxicity Detector</a></li>
+            <li><a href="#CPEN322">CPEN 322: Software Construction - Web Applications</a></li>
           </div>
         </div>
       </div>
@@ -278,7 +285,8 @@ body, html {
       <h3 class="w3-center">Experience with CSS</h3>
         <div style="text-align: center;">
           <div style="display: inline-block; text-align: left;">
-            <li><a href="#">stuff here</a></li>
+            <li><a href="#toxicity-detector">Toxicity Detector</a></li>
+            <li><a href="#CPEN322">CPEN 322: Software Construction - Web Applications</a></li>
           </div>
         </div>
       </div>
@@ -287,7 +295,7 @@ body, html {
       <h3 class="w3-center">Experience with Verilog</h3>
         <div style="text-align: center;">
           <div style="display: inline-block; text-align: left;">
-            <li><a href="#">stuff heres</a></li>
+            <li><a href="#CPEN211">CPEN 211: Introduction to Microcomputers</a></li>
           </div>
         </div>
       </div>
@@ -326,18 +334,29 @@ body, html {
 <!-- Container (Project Section) -->
 <div class="w3-content w3-container w3-padding-64">
   <div id="design-team">
-    <a href="https://www.ubcuas.com/" style="text-decoration: none;"><h2 class="w3-center w3-hover-opacity">UBC UAS</h2></a>
-    <p class="w3-center">University of British Columbia Unmanned Aircraft Systems Design Team</p>
-    <p class="w3-center"><em>Septemeber 2021 - Present</em></p>
+    <div id="UBC-UAS">
+      <a href="https://www.ubcuas.com/" style="text-decoration: none;"><h2 class="w3-center w3-hover-opacity"><img src="./images/ubcUasLogo.jpg" style="height:50px"> UBC UAS</h2></a>
+      <p class="w3-center">University of British Columbia Unmanned Aircraft Systems Design Team</p>
+      <p class="w3-center"><em>September 2021 - Present</em></p>
 
-    <h4 class="w3-center">Systems Software Developer</h4>
-    <a href="https://gitlab.com/ubcuas" style="text-decoration: none;">
-      <i class="fa fa-gitlab w3-hover-opacity w3-center w3-xxlarge" style="text-decoration: none; display: block;"></i>
-    </a>
-    <p class="w3-center"><em>tech used</em></p><br>
-    <div style="text-align: center;">
-      <div style="display: inline-block; text-align: left;">
-        <li></li>
+      <h3 class="w3-center">Systems Software Developer</h3>
+    </div>
+      <div class="w3-content w3-container w3-padding-16">
+        <h4>
+          <a href="https://gitlab.com/ubcuas/golden-retriever" style="text-decoration: none;" class="w3-hover-opacity">
+          <i class="fa fa-gitlab w3-hover-opacity"></i>
+          Golden Retriever (Ground Control Station Image Retriever)
+          </a>
+        </h4>
+        <p><em>Python, Docker</em></p>
+        <div style="text-align: center;">
+          <div style="display: inline-block; text-align: left;">
+            <li>Tested and debugged the aircraft to ground system image retrieving Python script, which optimized CLI argument
+              options to configure endpoint ports and retrieval latency</li>
+            <li>Initiated and wrote the image retrieval program user manual and Docker documentation, which improved future
+              development setup and deployment efficiency</li>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -353,22 +372,48 @@ body, html {
 <!-- Container (Project Section) -->
 <div class="w3-content w3-container w3-padding-64">
 
-  <div id="AR-paint-app">
+  <div id="AR-paint-app" class="w3-center w3-container w3-padding-32">
     <h3 class="w3-center">AR PAINTING APPLICATION</h3>
-    <a href="https://github.com/sallyyjan/disney-wand" style="text-decoration: none;">
-      <i class="fa fa-github w3-hover-opacity w3-center w3-xxlarge" style="text-decoration: none; display: block;"></i>
-    </a>
-    <p class="w3-center"><em>Python, OpenCV</em></p><br>
+    <p class="w3-center"><em>Python, OpenCV</em></p>
     <div style="text-align: center;">
       <div style="display: inline-block; text-align: left;">
         <li>Developed an object detection application using OpenCV in Python to display multiple target objects’ paths on a virtual canvas</li>
         <li>Processed webcam video frames by converting color-space to identify target using HSV value thresholds and accurately extract contours</li>
         <li>Analyzed object contours by comparing contour curve approximation and perimeter values to determine detection accuracy</li>
       </div>
+      <a href="https://github.com/sallyyjan/disney-wand" style="text-decoration: none;">
+        <i class="fa fa-github w3-hover-opacity w3-center w3-xxlarge w3-padding-16" style="text-decoration: none; display: block;"></i>
+      </a>
     </div>
   </div>
 
+  <div id="toxicity-detector" class="w3-center w3-container w3-padding-32">
+    <h3 class="w3-center">TOXICITY DETECTOR</h3>
+    <p class="w3-center"><em>Python, JavaScript, HTML/CSS, Google Colaboratory, Algorithmia</em></p><br>
+    <div style="text-align: center;">
+      <div style="display: inline-block; text-align: left;">
+        <li>Collaborated with a team of 3 to develop a sentiment analysis machine learning model using Pytorch to identify toxic text on a web page</li>
+        <li>Efficient data processing of datasets of over 1 million entries accessed via APIs using Python and Pandas</li>
+        <li>Managed deployment of trained model on Alogrithmia as API to be used in JavaScript component of the Google extension; recommended bootstrap aggregation to improve model accuracy</li>
+      </div>
+      <a href="https://docs.google.com/document/d/1zUAsq0XB0RyzK6GAzrypYPVCHxi2UOZHSo-VH_gb6qw/edit?usp=sharing" class="w3-hover-opacity" style="text-decoration: none;">
+        <i class="fa fa-file w3-hover-opacity w3-center w3-large w3-padding-16" style="text-decoration: none;"></i> <em> project report</em>
+      </a>
+    </div>
+  </div>
 
+  <div id="portfolio-website" class="w3-center w3-container w3-padding-32">
+    <h3 class="w3-center">PORTFOLIO WEBSITE</h3>
+    <p class="w3-center"><em>JavaScript, HTML, CSS</em></p><br>
+    <div style="text-align: center;">
+      <div style="display: inline-block; text-align: left;">
+        <li></li>
+      </div>
+      <a href="https://github.com/sallyyjan/sallyyjan.github.io" style="text-decoration: none;">
+        <i class="fa fa-github w3-hover-opacity w3-center w3-xxlarge w3-padding-16" style="text-decoration: none; display: block;"></i>
+      </a>
+    </div>
+  </div>
 
 
 </div>
@@ -412,7 +457,7 @@ body, html {
 
     <div class="w3-col m6" id="CPEN221">
       <h3>CPEN 221</h3>
-      <h4>Principle of Software Construction</h4>
+      <h4>Principles of Software Construction</h4>
       <p>Design, implementation, reasoning about software systems: abstraction and specification of software, testing, verification, abstract data types, object-oriented design, type hierarchies, concurrent software design.</p>
     </div>
   </div>
@@ -450,7 +495,7 @@ body, html {
   <div class="w3-row-padding w3-center">
     <div class="w3-col m6" id="CPEN322">
       <h3>CPEN 322</h3>
-      <h4>Software Construction: Web Applications</h4>
+      <h4>Software Construction - Web Applications</h4>
       <p>Contemporary concepts and techniques for developing interactive software applications: client-server architectures; session-oriented systems; security and scalability; models of application deployment.</p>
     </div>
 
